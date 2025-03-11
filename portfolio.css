@@ -118,7 +118,7 @@ works1
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
-  border: 0.1px solid #000; /* 2pxの黒い枠線 */
+  border: 0.3px solid #000; /* 2pxの黒い枠線 */
 }
 
 #item li {
