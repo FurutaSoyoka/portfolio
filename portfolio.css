@@ -1,0 +1,310 @@
+style.css
+
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #24292e;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
+  padding: 0 4%;
+}
+.site-title {
+  line-height: 1px;
+}
+.site-title a {
+  display: block;
+}
+.sec-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 270px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+#header li {
+  font-size: 0.9rem;
+  margin-left: 30px;
+}
+#header li a {
+  color: #24292e;
+}
+#header li a:hover {
+  opacity: 0.7;
+}
+#header li img.icon {
+  width: 20px;
+}
+
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+  margin-bottom: 80px;
+}
+#mainvisual img {
+  width: 100%;
+  max-width: 1200px;
+  height: 900px;
+  object-fit: cover;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+/*-------------------------------------------
+works1
+-------------------------------------------*/
+#works1 ul {
+  margin-bottom: 100px;
+}
+#works1 li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#works1 p {
+  text-align:justify;
+  margin-bottom: 30px;
+}
+
+#works1 h1 {
+    margin-bottom: 30px;
+    margin-top: 7px;
+}
+
+
+
+
+
+#item img {
+    width: 45%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#item li {
+    list-style: none;
+}
+
+#item li img {
+    width: 97%;
+    height: auto;
+}
+
+#item ul {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+#iii  ul img {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3列に並べる */
+        gap: 10px; /* 画像間の間隔 */
+        width: 100%; /* 画像を枠いっぱいに広げる */
+    }
+    
+
+
+
+/*-------------------------------------------
+Contact
+-------------------------------------------*/
+#contact dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#contact dt {
+  width: 15%;
+}
+#contact dd {
+  width: 85%;
+  margin-bottom: 10px;
+}
+#contact dd input,
+#contact dd textarea {
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+}
+#contact dd textarea {
+  height: 10rem;
+}
+#contact .button {
+  text-align: center;
+}
+#contact .button input {
+  width: 200px;
+  background-color: #24292e;
+  color: #fff;
+  padding: 15px 0;
+  border: solid 1px #24292e;
+}
+#contact .button input:hover {
+  background: #fff;
+  color: #24292e;
+}
+
+/* リンクボタンエリアのスタイル */
+.link-button-area {
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 横方向に中央揃え */
+    align-items: center; /* 縦方向に中央揃え */
+    height: 10vh; /* ビューポートの高さを使用（必要に応じて調整） */
+  }
+
+.link-button {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 12px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 70px;
+    justify-content: center;
+
+    align-items: center;
+    justify-content: center;
+  
+
+}
+
+.link-button:hover {
+    background-color: black;
+    color: white;
+}
+
+#a {
+    color: rgb(32, 32, 255); /* 通常時 */
+    text-decoration: none;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+a:hover {
+    color: rgb(27, 0, 107); /* ホバー時の色 */
+    text-decoration: underline; /* 下線を追加 */
+}
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+#footer {
+  background-color: #24292e;
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin-bottom: 70px;
+  }
+  .site-title {
+    margin-top: 20px;
+  }
+  .sec-title {
+    margin-bottom: 40px;
+  }
+
+  /*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+  #header {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  #header li {
+    font-size: 0.8rem;
+    margin-left: 20px;
+  }
+  #header li:first-child {
+    margin-left: 0;
+  }
+
+  /*-------------------------------------------
+  Works
+  -------------------------------------------*/
+  #works ul {
+    flex-direction: column;
+  }
+  #works li {
+    width: 100%;
+  }
+
+  /*-------------------------------------------
+  News
+  -------------------------------------------*/
+  #news dl {
+    flex-direction: column;
+  }
+  #news dt {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  #news dd {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  /*-------------------------------------------
+  Contact
+  -------------------------------------------*/
+  
+  #contact ul {
+    flex-direction: column;
+  }
+  #contact li {
+    width: 100%;
+  }
+
+}
